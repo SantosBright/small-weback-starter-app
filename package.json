@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "test"
+    "start": "webpack"
   },
   "keywords": [],
   "author": "",

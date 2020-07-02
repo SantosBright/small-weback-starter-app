@@ -1,4 +1,6 @@
-class AlertService{
+import { inputsAreValid } from './utils/inputs-are-valid';
+
+export default class AlertService{
     constructor(){
         this.errorBox = document.getElementById('error');
     }
