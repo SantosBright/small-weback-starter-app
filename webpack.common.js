@@ -14,7 +14,22 @@ module.exports = {
                     "css-loader",    // 2. Turns css into commonjs
                     "sass-loader"    // 1. turn sass into css
                 ]
-            }
+            },
+            {
+                test: /\.html$/,
+                use: ["html-loader"]
+            },
+            {
+                test: /\.(svg|png|jpg|jpeg|gif)$/,
+                use: {
+                    loader: "file-loader",
+                    options: {
+                        name: "[name].[ext]",
+                        outputPath: "images"
+                    }
+                }
+            },
+
         ]
     }
 };
